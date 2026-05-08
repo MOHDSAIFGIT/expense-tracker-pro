@@ -1,0 +1,67 @@
+import { Transaction } from '../types';
+
+export const DUMMY_TRANSACTIONS: Transaction[] = [
+  {
+    id: '1',
+    amount: 120.50,
+    type: 'expense',
+    category: 'Food',
+    note: 'Weekly groceries',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
+    paymentMethod: 'Card',
+  },
+  {
+    id: '2',
+    amount: 50.00,
+    type: 'expense',
+    category: 'Transport',
+    note: 'Fuel for car',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 24).toISOString(),
+    paymentMethod: 'Cash',
+  },
+  {
+    id: '3',
+    amount: 3500.00,
+    type: 'income',
+    category: 'Salary',
+    note: 'Monthly salary',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 48).toISOString(),
+    paymentMethod: 'Transfer',
+  },
+  {
+    id: '4',
+    amount: 85.00,
+    type: 'expense',
+    category: 'Shopping',
+    note: 'New shoes',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 72).toISOString(),
+    paymentMethod: 'Card',
+  },
+  {
+    id: '5',
+    amount: 200.00,
+    type: 'expense',
+    category: 'Bills',
+    note: 'Electricity bill',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 96).toISOString(),
+    paymentMethod: 'Transfer',
+  },
+  {
+    id: '6',
+    amount: 30.00,
+    type: 'expense',
+    category: 'Entertainment',
+    note: 'Movie tickets',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 120).toISOString(),
+    paymentMethod: 'Card',
+  },
+  {
+    id: '7',
+    amount: 500.00,
+    type: 'income',
+    category: 'Freelance',
+    note: 'Freelance project',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 144).toISOString(),
+    paymentMethod: 'Transfer',
+  }
+];
